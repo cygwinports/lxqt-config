@@ -1,9 +1,0 @@
---- origsrc/lxqt-config-cursor/CMakeLists.txt	2014-05-07 03:13:55.000000000 -0500
-+++ src/lxqt-config-cursor/CMakeLists.txt	2014-06-08 18:21:14.676238900 -0500
-@@ -71,5 +71,5 @@ target_link_libraries ( lxqt-config-curs
-                                                  ${X11_X11_LIB} ${X11_Xcursor_LIB} lxqt qtxdg ${ZLIB_LIBRARY} ${X11_Xfixes_LIB})
- # not needed probably ${X11_Xfixes_LIB})
- 
--INSTALL(TARGETS lxqt-config-cursor DESTINATION ${LIB_INSTALL_DIR})
-+INSTALL(TARGETS lxqt-config-cursor RUNTIME DESTINATION bin LIBRARY DESTINATION ${LIB_INSTALL_DIR})
- install(FILES ${DESKTOP_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
