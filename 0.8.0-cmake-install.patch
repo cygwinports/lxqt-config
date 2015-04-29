@@ -6,4 +6,4 @@
  
 -install(TARGETS lxqt-config-cursor DESTINATION ${LIB_INSTALL_DIR})
 +install(TARGETS lxqt-config-cursor RUNTIME DESTINATION bin LIBRARY DESTINATION ${LIB_INSTALL_DIR})
- install(FILES ${DESKTOP_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications)
+ install(FILES ${DESKTOP_FILES} DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications")
