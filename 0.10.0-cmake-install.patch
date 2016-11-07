@@ -1,0 +1,12 @@
+--- origsrc/lxqt-config-0.10.0/liblxqt-config-cursor/CMakeLists.txt	2015-11-01 23:36:28.000000000 -0600
++++ src/lxqt-config-0.10.0/liblxqt-config-cursor/CMakeLists.txt	2016-07-31 21:31:37.311132500 -0500
+@@ -80,7 +80,8 @@ target_link_libraries(lxqt-config-cursor
+ 
+ install(TARGETS
+     lxqt-config-cursor
+-    DESTINATION "${CMAKE_INSTALL_LIBDIR}/${LXQT_CONFIG_PROJECT}"
++    LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}/${LXQT_CONFIG_PROJECT}"
++    RUNTIME DESTINATION "bin"
+     COMPONENT Runtime
+ )
+ install(FILES

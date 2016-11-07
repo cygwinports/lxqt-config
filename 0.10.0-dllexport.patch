@@ -1,0 +1,11 @@
+--- origsrc/lxqt-config-0.10.0/liblxqt-config-cursor/selectwnd.h	2015-11-01 23:36:28.000000000 -0600
++++ src/lxqt-config-0.10.0/liblxqt-config-cursor/selectwnd.h	2016-07-31 21:50:09.475654100 -0500
+@@ -24,7 +24,7 @@ namespace LXQt {
+ class XCursorThemeModel;
+ 
+ #include "ui_selectwnd.h"
+-class LXQT_API SelectWnd : public QWidget, private Ui_SelectWnd
++class SelectWnd : public QWidget, private Ui_SelectWnd
+ {
+     Q_OBJECT
+ 
